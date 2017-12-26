@@ -67,9 +67,13 @@ bool List::operator==(const List& list2) const
 List& List::operator=(const List& list2)
 {
     Node* tmp(list2.GetHead());
-    Size=0;
+    if(&list2==this)
+	{
+		return *this;
+	}
     if(tmp)
     {
+        Size=0;
         Head_node=new Node;
         Node* obj=Head_node;
         while(tmp!=0)
