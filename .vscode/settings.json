@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "ostream": "cpp",
+        "iterator": "cpp",
+        "algorithm": "cpp",
+        "iostream": "cpp",
+        "string": "cpp",
+        "vector": "cpp"
+    }
+}
